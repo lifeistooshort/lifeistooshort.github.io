@@ -17,13 +17,11 @@
       var deathToll = 0;
       var frequency = 556
       var increaseDeathToll = function() {
-        console.log("death toll increases");
         deathToll += 1;
         $("#deathToll").text(deathToll);
         setTimeout(increaseDeathToll, frequency)
       }
      $( document ).ready(function() {
-         console.log("yo");
          setTimeout(increaseDeathToll,frequency);
          });
 
