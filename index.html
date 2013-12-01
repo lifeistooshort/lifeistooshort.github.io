@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Life is Too Short for Meetings</title>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="odometer.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="odometer-theme-digital.css" type="text/css"  media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="dying.css" type="text/css"  media="screen" charset="utf-8" />
+  </head>
+  <body>
+    <h1>Life Is Too Short for Meetings</h1>
+    <h1 id="deathToll" class="odometer">1</h1>
+    <p>
+      Every second, an average of 1.8 people die. Since you loaded this page, this many people have died. Use your time wisely.
+    </p>
+    <script type="text/javascript">
+      var deathToll = 0;
+      var frequency = 556
+      var increaseDeathToll = function() {
+        console.log("death toll increases");
+        deathToll += 1;
+        $("#deathToll").text(deathToll);
+        setTimeout(increaseDeathToll, frequency)
+      }
+     $( document ).ready(function() {
+         console.log("yo");
+         setTimeout(increaseDeathToll,frequency);
+         });
+
+    </script>
+  </body>
+</html>
