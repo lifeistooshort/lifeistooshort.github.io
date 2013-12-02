@@ -1,8 +1,19 @@
 body {
   background-color: black;
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
   text-align: center;
 }
 
-p,h1 {
+h1,
+p {
   color: white;
+  padding: 15px;
+}
+
+#deathToll {
+  font-size: 72px;
+}
+
+.wisely {
+  color: hsla(135, 84%, 75%, 1.0);
 }
