@@ -5,6 +5,7 @@
     
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="odometer.min.js" type="text/javascript"></script>
+    <script src="random.js" type="text/javascript"></script>
    
     <link rel="stylesheet" href="odometer-theme-default.css" type="text/css"  media="screen" charset="utf-8" />
     <link rel="stylesheet" href="dying.css" type="text/css"  media="screen" charset="utf-8" />
@@ -14,12 +15,16 @@
   </head>
 
   <body>    
-    <img class="skull" src="images/skull1.svg" alt="" />
+    <img class="skull shuffle" src="" alt="">
     <h1>Life Is Too Short <br><span style="color: #ff0066;">for Meetings</span></h1>
     <p><span style="color: #ffea00;">Every second, an average of 1.8 people die.</span><br> Since you loaded this page, this many people have died:</p>
     <p id="deathToll" class="odometer">1</p>
     <p class="wisely">Use your time wisely.</p>
 
+    <script type="text/javascript">
+    	$('.shuffle').randomImage();
+    </script>
+    
     <script type="text/javascript">
 
       var deathToll = 0;
